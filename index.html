@@ -46,7 +46,7 @@
             display: flex;
             justify-content: center;
         }
-        .btns__menu .btn{
+        .btns__menu .btn {
             font-size: 16px;
             font-weight: 600;
             color: #193a40;
@@ -67,6 +67,7 @@
 
     }
     </style>
+
 </head>
 <body>
     <div class="btns">
@@ -79,63 +80,78 @@
                 <button class="btn contact">Contact</button>
             </div>
         </div>
-        </div>
-        
-        <section id="home">
-            <div class="wrapper">
-                <h1>Home</h1>
-                <h2>Lorem ipsum dolor sit amet.</h2>
-                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
-                    Reiciendis repudiandae fugiat officia sint sed nulla, dolorum eum culpa dicta asperiores.</h3>
-            </div>
-        </section>
+    </div>
     
-        <section id="about">
+    <section id="home">
+        <div class="wrapper">
+            <h1>Home</h1>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quibusdam. <br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, unde?</h3>
+        </div>
+    </section>
+    <section id="about">
         <div class="wrapper">
             <h1>About</h1>
-            <h2>Loem ipsum dolor sit amet.</h2>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                Id voluptates praesentium dolores ullam nesciunt, deserunt quia quasi labore soluta voluptatibus?</h3>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quibusdam. <br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, unde?</h3>
         </div>
-    
-        <section id="skills"></section>
-        <div class="wrapper"></div>
+    </section>
+    <section id="skills">
+        <div class="wrapper">
             <h1>Skills</h1>
             <h2>Lorem ipsum dolor sit amet.</h2>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-            Labore maiores laboriosam expedita illo voluptatibus doloremque repudiandae eius earum quidem sapiente?</h3>
-        </section>
-    
-        <section id="works">
-        <div class="wrapper">
-                <h1>Works</h1>
-                <h2>Lorem ipsum dolor sit amet.</h2>
-                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
-                Consequuntur, natus! Nulla commodi natus tenetur alias quos aliquid saepe ducimus quasi!</h3>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quibusdam. <br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, unde?</h3>
         </div>
-        <section id="contact">
-            <div class="wrapper">
-                <h1>Contact</h1>
-                <h2>Lorem ipsum dolor sit amet.</h2>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                    Nostrum ea expedita esse doloribus consectetur fugiat nulla neque quidem praesentium aspernatur.</h3>
-            </div>
-        </section>
     </section>
-    
+    <section id="works">
+        <div class="wrapper">
+            <h1>Works</h1>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quibusdam. <br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, unde?</h3>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="wrapper">
+            <h1>Contact</h1>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quibusdam. <br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, unde?</h3>
+        </div>
+    </section>
     <script>
         const btnHome = document.querySelector('.home');
         const sectionHome = document.querySelector('#home');
-        btnHome.addEventListener('click', function() {
-            sectionHome.scrollIntoView({behavior:'smooth', block:'center'});
+        btnHome.addEventListener('click', function(){
+            sectionHome.scrollIntoView({behavior:"smooth", block:"center"});
         })
-    </script>
-
-    <script>
+    
         const btnAbout = document.querySelector('.about');
-        const sectionHome = document/queueMicrotask('#about');
-        btnAbout.addEventListener('click', function() {
-            sectionHome.scrollIntoView({behavior:'smooth', block:'center'});
+        const sectionAbout = document.querySelector('#about');
+        btnAbout.addEventListener('click', function(){
+            sectionAbout.scrollIntoView({behavior:"smooth", block:"center"});
+        })
+    
+        const btnSkills = document.querySelector('.skills');
+        const sectionSkills = document.querySelector('#skills');
+        btnSkills.addEventListener('click', function(){
+            sectionSkills.scrollIntoView({behavior:"smooth", block:"center"});
+        })
+    
+    
+        const btnWorks = document.querySelector('.works');
+        const sectionWorks = document.querySelector('#works');
+        btnWorks.addEventListener('click', function(){
+            sectionWorks.scrollIntoView({behavior:"smooth", block:"center"});
+        })
+    
+        const btnContact = document.querySelector('.contact');
+        const sectionContact = document.querySelector('#contact');
+        btnContact.addEventListener('click', function(){
+            sectionContact.scrollIntoView({behavior:"smooth", block:"center"});
         })
     </script>
 </body>
